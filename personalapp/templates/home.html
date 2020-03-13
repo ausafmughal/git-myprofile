@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+   {% load static %}
+
+            <!-- header start -->
+            <header id="header" class="header-wrapper home-parallax home-fade">
+                <div class="header-overlay"></div>
+                <div class="header-wrapper-inner">
+                    <div class="container">
+
+                        <div class="welcome-speech">
+                            <h1 style="color: #ffffff">Welcome to my portfolio</h1>
+                            <p style="color: #ffffff">The only thing we know about the future is that it will be different </p>
+                            <a href="{% url 'blogs' %}" class="btn btn-white">
+                               MY BLOGS
+                            </a>
+                        </div><!-- /.intro -->
+
+                    </div><!-- /.container -->
+
+                </div><!-- /.header-wrapper-inner -->
+            </header>
+            <!-- /#header -->
+
+            <div class="main-content">
+
+                <!--  begin feature section  -->
+                <section class="bg-white feature">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="feature-content text-center">
+                                    <div class="feature-icon-box">
+                                        <div class="feature-icon center-block">
+                                            <img src="{%static 'assets/img/py3.png' %}" alt="" height="60px" width="60px">
+                                        </div>
+                                    </div> <!--  end of /.feature-icon-box  -->
+                                    <div class="feature-info">
+                                        <h3 class="feature-heading">Blog</h3>
+                                        <p class="feature-description" style="color: rgba(0,0,0,0.56)">
+                                            “Blogging is a conversation, not a code.”
+                                        </p>  <!--   end of /.feature-description  -->
+                                    </div> <!--   end of /.feature-info  -->
+                                </div> <!--  end of /.feature-content  -->
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="feature-content text-center">
+                                    <div class="feature-icon-box">
+                                        <div class="feature-icon center-block">
+                                            <img src="{%static 'assets/img/pi2.png' %}" alt="" height="70px" width="70px">
+                                        </div>
+                                    </div> <!--  end of /.feature-icon-box  -->
+                                    <div class="feature-info">
+                                        <h3 class="feature-heading">Web Development</h3>
+                                        <p class="feature-description" style="color: rgba(0,0,0,0.56)">
+                                        “Web Development is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business.”
+                                        </p>  <!--   end of /.feature-description  -->
+                                    </div> <!--   end of /.feature-info  -->
+                                </div> <!--  end of /.feature-content  -->
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="feature-content text-center">
+                                    <div class="feature-icon-box">
+                                        <div class="feature-icon center-block">
+                                            <img src="{%static 'assets/img/py2.png' %}" alt="" height="70px" width="70px">
+                                        </div>
+                                    </div> <!--  end of /.feature-icon-box  -->
+                                    <div class="feature-info">
+                                        <h3 class="feature-heading">Python</h3>
+                                        <p class="feature-description" style="color: rgba(0,0,0,0.56)">
+                                        "Python makes us extremely productive, and makes maintaining a large and rapidly evolving codebase relatively simple."
+                                        </p>  <!--   end of /.feature-description  -->
+                                    </div> <!--   end of /.feature-info  -->
+                                </div> <!--  end of /.feature-content  -->
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="feature-content text-center">
+                                    <div class="feature-icon-box">
+                                        <div class="feature-icon center-block">
+                                            <img src="{%static 'assets/img/py1.png' %}" alt="" height="50px" width="50px">
+                                        </div>
+                                    </div> <!--  end of /.feature-icon-box  -->
+                                    <div class="feature-info">
+                                        <h3 class="feature-heading">Django</h3>
+                                        <p class="feature-description" style="color: rgba(0,0,0,0.56)">
+                                        'D-J-A-N-G-O. The D is silent.'
+                                        </p>  <!--   end of /.feature-description  -->
+                                    </div> <!--   end of /.feature-info  -->
+                                </div> <!--  end of /.feature-content  -->
+                            </div>
+
+                        </div>
+                    </div> <!-- end of /.container -->
+                </section>
+                <!--   end of feature section  -->
+
+
+                <!--  begin portfolio section  -->
+
+                <!--   end of portfolio section  -->
+
+
+                <!-- begin twitter-feed section -->
+
+
+
+                <!-- begin pricing section -->
+
+                <!-- end of pricing section -->
+
+
+     </div>        <!-- end of /.main-content -->
+    </div>
+{% endblock content %}

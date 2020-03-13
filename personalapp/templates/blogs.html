@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- header begin -->
+            <header class="page-head-blog">
+                <div class="header-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <ol class="breadcrumb">
+                                    <li><a href="{% url 'home' %}">home</a></li>
+                                    <li class="active">blog</li>
+                                </ol> <!-- end of /.breadcrumb -->
+
+                            </div>
+                        </div>
+                    </div> <!-- /.container -->
+                </div> <!-- /.header-wrapper -->
+            </header> <!-- /.page-head (header end) -->
+
+
+            <section class="blog-content">
+                <div class="container">
+                    <div class="row">
+                        <main class="col-md-8 col-md-offset-2" style="display: block;">
+                            {% for i in b %}
+                            <article>
+                                <img class="img-responsive center-block" src="{{ i.image.url}}" alt="empty">
+                                <div class="blog-heading">
+
+                                    <h2 class="text-capitalize">{{ i.title }}</h2>
+
+                                    <span class="date" style="color: #000000;">{{ i.date }}</span>
+                                    <strong>Author:</strong>
+                                                            <span class="author-name text-uppercase" style="color: #000000;">{{ i.author }}</span>
+{#                                    <span>12 comments</span>#}
+                                </div>
+                                <p >
+                                    {{ i.description|linebreaks }}
+                                </p>
+
+                                {% endfor %}
+
+
+                            </article>
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+{% endblock content %}

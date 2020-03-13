@@ -1,0 +1,80 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+   <!-- header begin -->
+            <header class="page-head">
+                <div class="header-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <ol class="breadcrumb">
+                                    <li><a href="{% url 'home' %}">home</a></li>
+                                    <li class="active">about Me</li>
+                                </ol> <!-- end of /.breadcrumb -->
+
+                            </div>
+                        </div>
+                    </div> <!-- /.container -->
+                </div> <!-- /.header-wrapper -->
+            </header> <!-- /.page-head (header end) -->
+
+            <div class="main-content">
+
+                <!-- begin our story section -->
+
+                <section class="bg-white story">
+                    <div class="container">
+                        <div class="headline text-center">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <h2 class="section-title">ABOUT!!</h2>
+                                </div>
+                            </div>
+                        </div> <!-- /.headline -->
+
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 text-center">
+                                <p class="story-description">
+                                I do Pyhton Coding I do because I love it. I like to make the web better place.
+                                </p> <!-- /.story-description -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of our story section -->
+
+
+                <!-- begin our designation section -->
+
+
+
+                 <!-- begin skill section -->
+
+                <section class="bg-light-gray skill">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+{#                                <h2>Introduction</h2>#}
+{#                                <p>#}
+{#                                    Integer ac metus non ipsum congue tincidunt ut id lacus. Duis suscipit odio non lacus aliquam, eget faucibus enim posuere. Aenean ut lectus ipsum. Pellentesque sit amet elementum velit. Ut sapien ante, suscipit a auctor in, consectetur eu nibh. Etiam interdum consectetur lacus ut iaculis. In luctus magna vitae ultricies consequat.#}
+{#                                </p>#}
+{##}
+{#                                <p>#}
+{#                                    In et blandit erat, ut gravida ante. Etiam ut est at dolor vehicula tempus quis ut augue. Duis nec ipsum ex. Sed in libero sit amet metus placerat commodo ut vitae nisi. Maecenas sit amet elit augue. Pellentesque pellentesque lacus eu fringilla dignissim. Aliquam consequat nec sapien quis tempor.#}
+{#                                </p>#}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div> <!-- end of /.main-content -->
+
+{% endblock content %}
